@@ -128,7 +128,7 @@ The migration code would look like:
 
 Note the override of the `transformClassName` method to define the new class name.
 
-That type of migration must be configured with the old class name as key. The actual class can be removed.
+That type of migration must be configured on application.conf file with the old class name as key. The actual class can be removed.
 
     lagom.serialization.json.migrations {
       "com.myservice.event.OrderAdded" = "com.myservice.event.OrderPlacedMigration"
